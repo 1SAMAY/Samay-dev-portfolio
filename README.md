@@ -65,15 +65,9 @@ Add screenshots or GIFs here to make your README more attractive.
 
 ### Screenshots
 
-![Homepage Preview](./preview/homepage.png)
-![Projects Section Preview](./preview/projects.png)
-![Light Mode Preview](./preview/light-mode.png)
-
-### GIF Demo
-
-![Portfolio Demo](./preview/portfolio-demo.gif)
-
-If you do not have these files yet, create a `preview` folder in the repo and add the images with the same names, or replace the paths with your own files.
+![Homepage Preview](./preview/homepage.svg)
+![Projects Section Preview](./preview/projects.svg)
+![Light Mode Preview](./preview/light-mode.svg)
 
 ## License
 
