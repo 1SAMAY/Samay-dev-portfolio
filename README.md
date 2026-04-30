@@ -66,7 +66,7 @@ Add screenshots or GIFs here to make your README more attractive.
 ### Screenshots
 
 ![Homepage Preview](./preview/homepage.svg)
-![Projects Section Preview](./preview/projects.svg)
+
 ![Light Mode Preview](./preview/light-mode.svg)
 
 ## License
