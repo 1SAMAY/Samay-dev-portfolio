@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-label="Homepage preview">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#050a0f"/>
+      <stop offset="100%" stop-color="#0b1320"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7aa9ff"/>
+      <stop offset="100%" stop-color="#8ef0c8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="900" fill="url(#bg)"/>
+  <rect x="40" y="32" width="1320" height="72" rx="36" fill="rgba(255,255,255,0.04)" stroke="rgba(188,214,233,0.12)"/>
+  <rect x="70" y="52" width="110" height="34" rx="17" fill="rgba(255,255,255,0.08)"/>
+  <text x="125" y="75" font-family="IBM Plex Mono, monospace" font-size="18" fill="#eef4f8" text-anchor="middle">Samay</text>
+  <text x="980" y="75" font-family="IBM Plex Mono, monospace" font-size="16" fill="#9fb0be">Home  Work  Stack  Contact</text>
+  <rect x="1230" y="52" width="110" height="34" rx="17" fill="rgba(142,240,200,0.12)" stroke="rgba(142,240,200,0.35)"/>
+  <text x="1285" y="75" font-family="IBM Plex Mono, monospace" font-size="14" fill="#8ef0c8" text-anchor="middle">Theme</text>
+
+  <rect x="40" y="130" width="1320" height="120" rx="26" fill="rgba(255,255,255,0.04)" stroke="rgba(188,214,233,0.12)"/>
+  <circle cx="76" cy="160" r="8" fill="#ff6b6b"/>
+  <circle cx="100" cy="160" r="8" fill="#ffc857"/>
+  <circle cx="124" cy="160" r="8" fill="#54d49a"/>
+  <text x="160" y="164" font-family="IBM Plex Mono, monospace" font-size="16" fill="#9fb0be">intro.boot</text>
+  <text x="76" y="205" font-family="IBM Plex Mono, monospace" font-size="18" fill="#c6d2dc">Loading portfolio experience...</text>
+  <rect x="76" y="226" width="1248" height="6" rx="3" fill="rgba(255,255,255,0.06)"/>
+  <rect x="76" y="226" width="900" height="6" rx="3" fill="url(#accent)"/>
+
+  <rect x="40" y="280" width="900" height="540" rx="28" fill="rgba(255,255,255,0.04)" stroke="rgba(188,214,233,0.12)"/>
+  <text x="76" y="336" font-family="IBM Plex Mono, monospace" font-size="18" fill="#8ef0c8">Available for freelance and full-time roles</text>
+  <text x="76" y="398" font-family="Space Grotesk, sans-serif" font-size="66" font-weight="700" fill="#eef4f8">I build clean, fast,</text>
+  <text x="76" y="466" font-family="Space Grotesk, sans-serif" font-size="66" font-weight="700" fill="#8ef0c8">modern web experiences.</text>
+  <text x="76" y="535" font-family="Space Grotesk, sans-serif" font-size="24" fill="#9fb0be">Terminal-inspired portfolio with motion, cards, and polished interactions.</text>
+  <rect x="76" y="584" width="160" height="52" rx="26" fill="url(#accent)"/>
+  <text x="156" y="617" font-family="IBM Plex Mono, monospace" font-size="16" fill="#061015" text-anchor="middle">Explore Work</text>
+  <rect x="252" y="584" width="180" height="52" rx="26" fill="rgba(255,255,255,0.04)" stroke="rgba(188,214,233,0.18)"/>
+  <text x="342" y="617" font-family="IBM Plex Mono, monospace" font-size="16" fill="#eef4f8" text-anchor="middle">Let's Connect</text>
+
+  <rect x="980" y="280" width="380" height="540" rx="28" fill="rgba(255,255,255,0.04)" stroke="rgba(188,214,233,0.12)"/>
+  <text x="1016" y="336" font-family="IBM Plex Mono, monospace" font-size="16" fill="#9fb0be">samay@portfolio - bash</text>
+  <text x="1016" y="392" font-family="IBM Plex Mono, monospace" font-size="18" fill="#dce7ef">$ whoami</text>
+  <text x="1016" y="430" font-family="IBM Plex Mono, monospace" font-size="18" fill="#eef4f8">Samay Dudhrejiya</text>
+  <text x="1016" y="490" font-family="IBM Plex Mono, monospace" font-size="18" fill="#dce7ef">$ role</text>
+  <text x="1016" y="528" font-family="IBM Plex Mono, monospace" font-size="18" fill="#eef4f8">Frontend / Web Developer</text>
+  <text x="1016" y="588" font-family="IBM Plex Mono, monospace" font-size="18" fill="#dce7ef">$ focus</text>
+  <text x="1016" y="626" font-family="IBM Plex Mono, monospace" font-size="18" fill="#eef4f8">Portfolio, UI, responsive design</text>
+</svg>
