@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samay Dudhrejiya | Portfolio</title>
+    <meta
+      name="description"
+      content="A terminal-inspired portfolio website with bold typography, featured work, stack, and contact sections."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <canvas id="particle-canvas" aria-hidden="true"></canvas>
+    <div class="bg-grid"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+
+    <header class="topbar">
+      <a class="logo" href="#home">Samay</a>
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#work">Work</a>
+        <a href="#stack">Stack</a>
+        <a href="#contact">Contact</a>
+        <a class="resume" href="#contact">RESUME</a>
+      </nav>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle theme">
+        Theme
+      </button>
+    </header>
+    <div class="scroll-progress" aria-hidden="true">
+      <span data-scroll-progress></span>
+    </div>
+
+    <main id="home">
+      <section class="hero section">
+        <div class="boot-card">
+          <div class="boot-head">
+            <span class="dot red"></span>
+            <span class="dot amber"></span>
+            <span class="dot green"></span>
+            <span class="boot-name">intro.boot</span>
+          </div>
+          <div class="boot-body">
+            <p>Loading portfolio experience...</p>
+            <p>[ OK ] Identity module - ready</p>
+            <p>[ OK ] Project module - ready</p>
+            <p>[ OK ] Motion module - ready</p>
+            <p>Launching interface...</p>
+          </div>
+          <div class="boot-progress">
+            <span data-progress></span>
+          </div>
+        </div>
+
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Available for freelance and full-time roles</p>
+            <p class="kicker">INDIA - 2026</p>
+            <h1>
+              HI, I&apos;M <span>Samay Dudhrejiya</span><br />
+              I BUILD CLEAN, FAST, AND MODERN WEB EXPERIENCES.
+            </h1>
+            <p class="lede">
+              I design responsive websites and interfaces with strong visuals,
+              smooth motion, and a polished terminal-inspired personality.
+            </p>
+
+            <div class="cta-row">
+              <a class="button primary" href="#work">Explore Work</a>
+              <a class="button secondary" href="#contact">Let's Connect</a>
+            </div>
+
+            <div class="meta-grid">
+              <div>
+                <span class="meta-value">08+</span>
+                <span class="meta-label">Projects shipped</span>
+              </div>
+              <div>
+                <span class="meta-value">03</span>
+                <span class="meta-label">Core services</span>
+              </div>
+              <div>
+                <span class="meta-value">100%</span>
+                <span class="meta-label">Responsive</span>
+              </div>
+            </div>
+
+            <div class="links-row">
+              <a href="https://github.com/1SAMAY" target="_blank" rel="noreferrer">GitHub</a>
+              <a
+                href="https://www.linkedin.com/in/samay-dudhrejiya/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                LinkedIn
+              </a>
+              <a href="mailto:Samay4932@gmail.com">Email</a>
+            </div>
+          </div>
+
+          <aside class="terminal-card">
+            <p class="panel-title">samay@portfolio - bash</p>
+            <div class="terminal-box">
+              <p>$ whoami</p>
+              <p>Samay Dudhrejiya</p>
+              <p>$ role</p>
+              <p>Frontend / Web Developer</p>
+              <p>$ focus</p>
+              <p>Portfolio, UI, responsive design, motion</p>
+              <p>$ status</p>
+              <p>Building polished web experiences</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="work" class="section">
+        <div class="section-head">
+          <p class="eyebrow">Selected Work</p>
+          <h2>FEATURED PROJECTS</h2>
+          <p class="count">04 / PROJECTS</p>
+        </div>
+
+        <div class="featured-list">
+          <article class="featured-card large">
+            <div class="card-label">
+              <span>LIVE 01</span>
+              <span>AI - PRODUCTIVITY</span>
+            </div>
+            <h3>PERSONAL AI ASSISTANT</h3>
+            <p>
+              An intelligent assistant built to help with everyday productivity,
+              task handling, and a smoother workflow experience.
+            </p>
+            <div class="tag-row">
+              <span>AI</span>
+              <span>Automation</span>
+              <span>Assistant</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://github.com/1SAMAY/Personal-AI-Assistant"
+                target="_blank"
+                rel="noreferrer"
+                data-github-popup="Personal-AI-Assistant"
+              >
+                GitHub
+              </a>
+            </div>
+          </article>
+
+          <article class="featured-card">
+            <div class="card-label">
+              <span>LIVE 02</span>
+              <span>BROWSER EXTENSION</span>
+            </div>
+            <h3>MEDIA DOWNLOADER EXTENSION</h3>
+            <p>
+              A browser extension designed to make downloading media quicker
+              and more convenient from supported websites.
+            </p>
+            <div class="tag-row">
+              <span>Extension</span>
+              <span>Browser</span>
+              <span>Tools</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://github.com/1SAMAY/media-downloader-extension"
+                target="_blank"
+                rel="noreferrer"
+                data-github-popup="media-downloader-extension"
+              >
+                GitHub
+              </a>
+            </div>
+          </article>
+
+          <article class="featured-card">
+            <div class="card-label">
+              <span>LIVE 03</span>
+              <span>GAME STORE</span>
+            </div>
+            <h3>GAME STORE</h3>
+            <p>
+              A polished game store concept focused on showcasing titles,
+              browsing categories, and presenting products clearly.
+            </p>
+            <div class="tag-row">
+              <span>E-commerce</span>
+              <span>UI</span>
+              <span>Storefront</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://github.com/1SAMAY/Game_Store"
+                target="_blank"
+                rel="noreferrer"
+                data-github-popup="Game_Store"
+              >
+                GitHub
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="more-head">
+          <p class="eyebrow">More Projects</p>
+          <button class="more-btn" type="button" data-more-toggle>Show more projects</button>
+        </div>
+
+        <div class="more-projects" data-more-projects hidden>
+          <div class="project-grid">
+            <article class="project-card">
+              <div class="project-top">
+                <span>04</span>
+                <span>PRODUCTIVITY</span>
+              </div>
+              <h3>DEVDOCK</h3>
+              <p>
+                A developer-focused workspace concept for organizing tools,
+                tasks, and daily work in one clean interface.
+              </p>
+              <p class="tech">GitHub: 1SAMAY/DevDock</p>
+            </article>
+
+            <article class="project-card coming-soon">
+              <div class="project-top">
+                <span>05</span>
+                <span>COMING SOON</span>
+              </div>
+              <h3>PROJECT FIVE</h3>
+              <p>
+                Reserved for your next project, client work, or personal build.
+              </p>
+              <p class="tech">Add tech stack later</p>
+            </article>
+
+            <article class="project-card coming-soon">
+              <div class="project-top">
+                <span>06</span>
+                <span>COMING SOON</span>
+              </div>
+              <h3>PROJECT SIX</h3>
+              <p>
+                Another showcase slot for future work to keep the portfolio
+                flexible and easy to expand.
+              </p>
+              <p class="tech">Add tech stack later</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="stats-strip" aria-hidden="true">
+          <span>SECURE</span>
+          <span>RELIABLE</span>
+          <span>RESPONSIVE</span>
+          <span>SCALABLE</span>
+          <span>INTERACTIVE</span>
+          <span>OPTIMIZED</span>
+          <span>MODERN</span>
+        </div>
+      </section>
+
+      <section id="stack" class="section split">
+        <div class="section-head">
+          <p class="eyebrow">Arsenal</p>
+          <h2>TECH STACK</h2>
+          <p class="count">14 / TECHNOLOGIES</p>
+        </div>
+
+        <div class="stack-grid">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>React</span>
+          <span>Next.js</span>
+          <span>TypeScript</span>
+          <span>Tailwind</span>
+          <span>Vite</span>
+          <span>Framer Motion</span>
+          <span>GSAP</span>
+          <span>Figma</span>
+          <span>Git</span>
+          <span>Responsive Design</span>
+          <span>Browser Extensions</span>
+        </div>
+      </section>
+
+      <section class="section about-section">
+        <div class="about-copy">
+          <p class="eyebrow">About</p>
+          <h2>SAMAY DUDHREJIYA</h2>
+          <p>
+            I&apos;m a web developer focused on building responsive interfaces,
+            polished landing pages, and practical front-end experiences. My
+            work leans into strong layout, clean motion, and thoughtful UI.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <p class="panel-title">quick links</p>
+          <a href="mailto:Samay4932@gmail.com">Samay4932@gmail.com</a>
+          <a href="https://github.com/1SAMAY" target="_blank" rel="noreferrer">
+            github.com/1SAMAY
+          </a>
+          <a
+            href="https://www.linkedin.com/in/samay-dudhrejiya/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            linkedin.com/in/samay-dudhrejiya
+          </a>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="contact-card">
+          <p class="eyebrow">Contact</p>
+          <h2>LET'S BUILD SOMETHING GREAT</h2>
+          <p>
+            I&apos;m available for freelance and full-time opportunities. If you
+            want to build something clean and memorable, feel free to reach out.
+          </p>
+          <div class="cta-row">
+            <a class="button primary" href="mailto:Samay4932@gmail.com">Email Me</a>
+            <a class="button secondary" href="#home">Back to Top</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section resume-section">
+        <div class="contact-card">
+          <p class="eyebrow">Resume</p>
+          <h2>RESUME AVAILABLE ON REQUEST</h2>
+          <p>
+            Add your PDF link here later. For now, the portfolio is ready for
+            your content, projects, and live links.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 Samay. Built with care by Samay. All rights reserved.</p>
+      <div class="footer-marquee" aria-hidden="true">
+        <span>Clean</span>
+        <span>Fast</span>
+        <span>Confident</span>
+        <span>Modern</span>
+        <span>Accessible</span>
+        <span>Dynamic</span>
+      </div>
+    </footer>
+
+    <div class="github-popup" data-github-popup-box hidden aria-hidden="true">
+      <div class="github-popup__title">github preview</div>
+      <div class="github-popup__body">
+        <p>$ open repository</p>
+        <p>Hover a project GitHub link to preview details.</p>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
