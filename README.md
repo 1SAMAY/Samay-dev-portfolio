@@ -1,56 +1,64 @@
-# Samay Dudhrejiya Portfolio
+Samay Dudhrejiya — Developer Portfolio
 
-A modern, terminal-inspired personal portfolio built with **HTML**, **CSS**, and **TypeScript** on top of **Vite**.
 
-## Features
 
-- Dark and light theme toggle
-- Animated particle background
-- Scroll-linked progress bar
-- Scroll reveal animations
-- Parallax background motion
-- Featured project cards with hover previews
-- "Show more projects" expansion
 
-## Tech Stack
 
-- HTML
-- CSS
-- TypeScript
-- Vite
 
-## Projects
+A modern, high-performance personal portfolio with a terminal-inspired UI, designed to showcase projects, skills, and creativity in an interactive way.
 
-Featured work shown on the site:
+🌐 Live Demo
 
-- Personal AI Assistant
-- Media Downloader Extension
-- Game Store
-- DevDock
+👉 View Portfolio:
+https://samay-dev-portfolio.vercel.app/
 
-## Getting Started
+✨ Features
+🌙 Dark / Light Mode Toggle
+🎇 Animated Particle Background
+📊 Scroll Progress Indicator
+🎬 Smooth Scroll Reveal Animations
+🌌 Parallax Motion Effects
+🧩 Interactive Project Cards
+🔽 Expandable Project Section ("Show More")
+⚡ Fast & Optimized Performance (Vite)
+🛠 Tech Stack
+Frontend: HTML, CSS, TypeScript
+Build Tool: Vite
+Design: Custom UI (Terminal-inspired theme)
+📂 Featured Projects
+
+Projects showcased in the portfolio:
+
+🤖 Personal AI Assistant
+📥 Media Downloader Extension
+🎮 Game Store (Epic Games Inspired)
+🧰 DevDock – Developer Workspace
+⚙️ Getting Started
+
+Clone the repository:
+
+git clone https://github.com/1SAMAY/your-repo-name.git
+cd your-repo-name
 
 Install dependencies:
 
-```bash
 npm install
-```
 
-Run the dev server:
+Run the development server:
 
-```bash
 npm run dev
-```
 
 Build for production:
 
-```bash
 npm run build
-```
+📸 Preview
 
-## Contact
+Add screenshots or GIFs here to make your README more attractive
 
-- Email: Samay4932@gmail.com
-- GitHub: https://github.com/1SAMAY
-- LinkedIn: https://www.linkedin.com/in/samay-dudhrejiya/
+📄 License
 
+This project is open-source and available under the MIT License.
+
+⭐ Support
+
+If you like this project, consider giving it a star ⭐ on GitHub — it really helps!
