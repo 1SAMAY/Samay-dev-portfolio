@@ -31,14 +31,20 @@ Projects showcased in the portfolio:
 - Media Downloader Extension
 - Game Store
 - DevDock
+- AirTouch
+- DontTrust
+- VisionText-AI
+- Cookie-Sync
+- Fun-Game
+- SAMAY-PORTFOLIO
 
 ## Getting Started
 
 Clone the repository:
 
 ```bash
-git clone https://github.com/1SAMAY/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/1SAMAY/Samay-dev-portfolio.git
+cd Samay-dev-portfolio
 ```
 
 Install dependencies:
