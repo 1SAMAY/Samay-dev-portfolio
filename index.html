@@ -26,6 +26,7 @@
       <nav class="nav">
         <a href="#home">Home</a>
         <a href="#work">Work</a>
+        <a href="#code-city">Code City</a>
         <a href="#stack">Stack</a>
         <a href="#contact">Contact</a>
         <a class="resume" href="/Samay_Dudharejiya_Resume.pdf" download>RESUME</a>
@@ -74,12 +75,13 @@
 
             <div class="cta-row">
               <a class="button primary" href="#work">Explore Work</a>
+              <a class="button secondary" href="#code-city" data-enter-code-city>Enter Code City</a>
               <a class="button secondary" href="#contact">Let's Connect</a>
             </div>
 
             <div class="meta-grid">
               <div>
-                <span class="meta-value">10+</span>
+                <span class="meta-value">17</span>
                 <span class="meta-label">Projects shipped</span>
               </div>
               <div>
@@ -101,7 +103,7 @@
               >
                 LinkedIn
               </a>
-              <a href="mailto:Samay4932@gmail.com">Email</a>
+              <a href="mailto:samay4932@gmail.com?subject=Portfolio%20Contact">Email</a>
             </div>
           </div>
 
@@ -125,8 +127,34 @@
         <div class="section-head">
           <p class="eyebrow">Selected Work</p>
           <h2>FEATURED PROJECTS</h2>
-          <p class="count">10 / PROJECTS</p>
+          <p class="count"><span data-project-count>17</span> / PROJECTS</p>
         </div>
+
+        <div class="project-spotlight" data-project-spotlight aria-hidden="true"></div>
+
+        <div class="project-controls" aria-label="Project controls">
+          <label class="project-search">
+            <span>Search</span>
+            <input
+              type="search"
+              data-project-search
+              placeholder="Search projects, stack, features"
+              autocomplete="off"
+            />
+          </label>
+
+          <div class="project-filters" data-project-filters aria-label="Project filters">
+            <button class="filter-chip is-active" type="button" data-project-filter="All" aria-pressed="true">All</button>
+            <button class="filter-chip" type="button" data-project-filter="AI" aria-pressed="false">AI</button>
+            <button class="filter-chip" type="button" data-project-filter="Web" aria-pressed="false">Web</button>
+            <button class="filter-chip" type="button" data-project-filter="Extension" aria-pressed="false">Extension</button>
+            <button class="filter-chip" type="button" data-project-filter="Game" aria-pressed="false">Game</button>
+            <button class="filter-chip" type="button" data-project-filter="Security" aria-pressed="false">Security</button>
+            <button class="filter-chip" type="button" data-project-filter="Portfolio" aria-pressed="false">Portfolio</button>
+          </div>
+        </div>
+
+        <p class="project-results" data-project-results aria-live="polite">17 projects ready</p>
 
         <div class="featured-list">
           <article class="featured-card large">
@@ -216,7 +244,7 @@
           <button class="more-btn" type="button" data-more-toggle>Show more projects</button>
         </div>
 
-        <div class="more-projects" data-more-projects hidden>
+        <div class="more-projects" data-more-projects data-collapsed="true" aria-hidden="true">
           <div class="project-grid">
             <article class="project-card">
               <div class="project-top">
@@ -352,6 +380,139 @@
                 </a>
               </div>
             </article>
+
+            <article class="project-card">
+              <div class="project-top">
+                <span>11</span>
+                <span>SECURITY SCANNER</span>
+              </div>
+              <h3>CODEGUARD OS</h3>
+              <p>
+                An offline code security scanner with local ZIP/folder analysis,
+                security scoring, readable reports, and Windows desktop
+                packaging.
+              </p>
+              <p class="tech">GitHub: 1SAMAY/CodeGuard-OS-</p>
+              <div class="project-links">
+                <a href="https://github.com/1SAMAY/CodeGuard-OS-" target="_blank" rel="noreferrer" data-github-popup="CodeGuard-OS-">
+                  GitHub
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-top">
+                <span>12</span>
+                <span>3D VISUALIZER</span>
+              </div>
+              <h3>REPOGALAXY</h3>
+              <p>
+                A pure client-side GitHub visualizer that turns public users or
+                repositories into interactive 3D repo and project graphs.
+              </p>
+              <p class="tech">GitHub: 1SAMAY/-RepoGalaxy</p>
+              <div class="project-links">
+                <a href="https://github.com/1SAMAY/-RepoGalaxy" target="_blank" rel="noreferrer" data-github-popup="-RepoGalaxy">
+                  GitHub
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-top">
+                <span>13</span>
+                <span>PDF SECURITY</span>
+              </div>
+              <h3>PDFSHIELD PRO</h3>
+              <p>
+                A local PDF protection suite with encryption, authorized
+                unlocking, batch processing, privacy-first handling, and a
+                polished dashboard.
+              </p>
+              <p class="tech">GitHub: 1SAMAY/PDFShield-Pro</p>
+              <div class="project-links">
+                <a href="https://github.com/1SAMAY/PDFShield-Pro" target="_blank" rel="noreferrer" data-github-popup="PDFShield-Pro">
+                  GitHub
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-top">
+                <span>14</span>
+                <span>LIVE PORTFOLIO</span>
+              </div>
+              <h3>SAMAY DEV PORTFOLIO</h3>
+              <p>
+                The current personal portfolio site with dark/light mode,
+                animated UI, project showcase sections, and downloadable
+                resume support.
+              </p>
+              <p class="tech">GitHub: 1SAMAY/Samay-dev-portfolio</p>
+              <div class="project-links">
+                <a href="https://github.com/1SAMAY/Samay-dev-portfolio" target="_blank" rel="noreferrer" data-github-popup="Samay-dev-portfolio">
+                  GitHub
+                </a>
+                <a href="https://samay-dev-portfolio.vercel.app" target="_blank" rel="noreferrer">
+                  Live Demo
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-top">
+                <span>15</span>
+                <span>GITHUB PAGES</span>
+              </div>
+              <h3>SAMAY GITHUB IO</h3>
+              <p>
+                A GitHub Pages repository reserved for publishing static
+                portfolio experiments, web pages, and personal site assets.
+              </p>
+              <p class="tech">GitHub: 1SAMAY/Samay.github.io</p>
+              <div class="project-links">
+                <a href="https://github.com/1SAMAY/Samay.github.io" target="_blank" rel="noreferrer" data-github-popup="Samay.github.io">
+                  GitHub
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-top">
+                <span>16</span>
+                <span>PROFILE</span>
+              </div>
+              <h3>SAMAY</h3>
+              <p>
+                A personal GitHub repository for profile content, learning
+                experiments, and developer identity material connected to the
+                main portfolio.
+              </p>
+              <p class="tech">GitHub: 1SAMAY/SAMAY</p>
+              <div class="project-links">
+                <a href="https://github.com/1SAMAY/SAMAY" target="_blank" rel="noreferrer" data-github-popup="SAMAY">
+                  GitHub
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-top">
+                <span>17</span>
+                <span>GITHUB PROFILE</span>
+              </div>
+              <h3>1SAMAY</h3>
+              <p>
+                The GitHub profile repository for account-level README content,
+                profile presentation, and public developer portfolio links.
+              </p>
+              <p class="tech">GitHub: 1SAMAY/1SAMAY</p>
+              <div class="project-links">
+                <a href="https://github.com/1SAMAY/1SAMAY" target="_blank" rel="noreferrer" data-github-popup="1SAMAY">
+                  GitHub
+                </a>
+              </div>
+            </article>
           </div>
         </div>
 
@@ -363,6 +524,43 @@
           <span>INTERACTIVE</span>
           <span>OPTIMIZED</span>
           <span>MODERN</span>
+        </div>
+      </section>
+
+      <section id="code-city" class="section code-city-section">
+        <div class="section-head code-city-head">
+          <p class="eyebrow">Advanced Mode</p>
+          <h2>CODE CITY SIMULATION</h2>
+          <p class="count">v0.1.0 / LOCAL SOFTWARE CITY</p>
+        </div>
+
+        <div class="code-city-intro">
+          <div>
+            <p>
+              Enter a local, browser-only city generated from the portfolio project data.
+              Projects become cities, folders become districts, files become grounded buildings,
+              imports become roads, and health signals become traffic, score, and security layers.
+            </p>
+            <div class="cta-row">
+              <button class="button primary" type="button" data-enter-code-city>
+                Launch City
+              </button>
+              <a class="button secondary" href="#work">Normal Portfolio</a>
+            </div>
+          </div>
+          <div class="code-city-signal" aria-hidden="true">
+            <span>Buildings</span>
+            <span>Roads</span>
+            <span>Traffic</span>
+            <span>Security</span>
+          </div>
+        </div>
+
+        <div data-code-city-root class="code-city-root">
+          <div class="code-city-loading">
+            <p class="panel-title">city.boot</p>
+            <p>Preparing local project data. No cloud APIs. No external scanners.</p>
+          </div>
         </div>
       </section>
 
@@ -404,7 +602,7 @@
 
         <div class="about-card">
           <p class="panel-title">quick links</p>
-          <a href="mailto:Samay4932@gmail.com">Samay4932@gmail.com</a>
+          <a href="mailto:samay4932@gmail.com?subject=Portfolio%20Contact">samay4932@gmail.com</a>
           <a href="https://github.com/1SAMAY" target="_blank" rel="noreferrer">
             github.com/1SAMAY
           </a>
@@ -427,7 +625,7 @@
             want to build something clean and memorable, feel free to reach out.
           </p>
           <div class="cta-row">
-            <a class="button primary" href="mailto:Samay4932@gmail.com">Email Me</a>
+            <a class="button primary" href="mailto:samay4932@gmail.com?subject=Portfolio%20Contact">samay4932@gmail.com</a>
             <a class="button secondary" href="#home">Back to Top</a>
           </div>
         </div>
@@ -469,6 +667,24 @@
       <div class="github-popup__body">
         <p>$ open repository</p>
         <p>Hover a project GitHub link to preview details.</p>
+      </div>
+    </div>
+
+    <div class="project-modal" data-project-modal hidden aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="project-modal-title">
+      <button class="project-modal__backdrop" type="button" data-modal-close aria-label="Close project quick view"></button>
+      <div class="project-modal__panel" role="document">
+        <div class="project-modal__top">
+          <p class="eyebrow" data-modal-type>Project Quick View</p>
+          <button class="project-modal__close" type="button" data-modal-close aria-label="Close project quick view">x</button>
+        </div>
+        <h2 id="project-modal-title" data-modal-title>Project</h2>
+        <p class="project-modal__description" data-modal-description></p>
+        <div class="modal-tags" data-modal-tech></div>
+        <div class="project-modal__features">
+          <p class="panel-title">key features</p>
+          <ul data-modal-features></ul>
+        </div>
+        <div class="project-modal__actions" data-modal-actions></div>
       </div>
     </div>
 

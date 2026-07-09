@@ -15,6 +15,7 @@ View Portfolio: [https://samay-dev-portfolio.vercel.app/](https://samay-dev-port
 - Parallax Motion Effects
 - Interactive Project Cards
 - Expandable Project Section ("Show More")
+- Code City Simulation advanced project visualization
 - Fast and Optimized Performance with Vite
 
 ## Tech Stack
@@ -37,6 +38,60 @@ Projects showcased in the portfolio:
 - Cookie-Sync
 - Fun-Game
 - SAMAY-PORTFOLIO
+- CodeGuard OS
+- RepoGalaxy
+- PDFShield Pro
+- Samay-dev-portfolio
+- Samay.github.io
+- SAMAY
+- 1SAMAY
+
+## Code City Simulation
+
+The portfolio includes an advanced local-only mode called **Code City Simulation v2.0**, built as a Three.js Git City / GitHub Skyline-style repository map.
+
+Open the portfolio and click **Enter Code City** or the **Code City** nav item. The city is generated from local portfolio project data:
+
+- Project = city
+- Folder = district
+- File = building
+- Imports/API/database/security/deployment relationships = flat roads and dependency paths
+- Lines of code = building height
+- Language/type = subtle building material color
+- Security/performance/maintainability = HUD and score signals
+- File role = procedural architecture style, such as entry tower, UI tower, backend tower, data vault, lab block, warehouse, library, deployment block, control block, or security tower
+- LOC and file size create grounded vertical buildings using X/Z for city placement and Y for height
+
+### Controls
+
+- Mouse drag: orbit/pan the isometric city camera
+- Mouse wheel: zoom
+- Hover building: show file tooltip and highlight related paths
+- Click building: open file detail modal
+- Double-click building: focus camera on that building
+- Reset Camera: return to the default skyline framing
+- Fullscreen: opens the city, HUD, and right repo panel without the normal page UI
+- Right panel: search, filter, sort, and switch repositories
+- `Esc`: close modal or exit fullscreen
+
+### Performance Modes
+
+- Ultra: highest pixel ratio, shadows, and most instanced windows
+- High: sharp desktop rendering with shadows and reduced window count
+- Balanced: default laptop-friendly rendering
+- Low: low pixel ratio, no shadows, no instanced windows, fallback list remains available
+
+### Editing City Data
+
+Project data starts in `src/main.ts` in the `projects` array. Code City converts that list into local city data in `src/codeCityData.ts`.
+
+To customize buildings, scores, folders, file roles, or future parser output, edit:
+
+- `src/codeCityData.ts` for the city data model and mapping rules
+- `src/codeCity.ts` for the Three.js renderer, layout engine, camera, picking, fullscreen, and repo panel
+- `styles.css` for the WebGL city shell, right sidebar, fullscreen mode, modal, and responsive fallback
+
+No cloud API, paid API, online scanner, external AI API, or GitHub API is required for Code City.
 
 ## Getting Started
 
