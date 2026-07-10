@@ -15,11 +15,11 @@ def p(text, style):
 
 def section_title(text, styles):
     return [
-        Spacer(1, 1.6 * mm),
+        Spacer(1, 0.9 * mm),
         Paragraph(text, styles["section"]),
-        Spacer(1, 0.8 * mm),
-        HRFlowable(width="100%", thickness=0.9, color=colors.HexColor("#1F4E79"), spaceBefore=0, spaceAfter=0),
-        Spacer(1, 1.2 * mm),
+        Spacer(1, 0.35 * mm),
+        HRFlowable(width="100%", thickness=0.75, color=colors.HexColor("#1F4E79"), spaceBefore=0, spaceAfter=0),
+        Spacer(1, 0.7 * mm),
     ]
 
 
@@ -29,8 +29,8 @@ styles.add(
         name="Name",
         parent=styles["Title"],
         fontName="Helvetica-Bold",
-        fontSize=21,
-        leading=23,
+        fontSize=18,
+        leading=19.5,
         textColor=colors.HexColor("#12304A"),
         alignment=TA_LEFT,
         spaceAfter=2,
@@ -41,8 +41,8 @@ styles.add(
         name="Contact",
         parent=styles["BodyText"],
         fontName="Helvetica",
-        fontSize=9,
-        leading=10.8,
+        fontSize=8,
+        leading=9.1,
         textColor=colors.HexColor("#34495E"),
         spaceAfter=0,
     )
@@ -52,8 +52,8 @@ styles.add(
         name="section",
         parent=styles["Heading2"],
         fontName="Helvetica-Bold",
-        fontSize=11,
-        leading=12.4,
+        fontSize=9.2,
+        leading=10.2,
         textColor=colors.HexColor("#1F4E79"),
         spaceAfter=0,
     )
@@ -63,8 +63,8 @@ styles.add(
         name="Body",
         parent=styles["BodyText"],
         fontName="Helvetica",
-        fontSize=9.1,
-        leading=10.8,
+        fontSize=7.8,
+        leading=8.8,
         textColor=colors.HexColor("#1F2937"),
         spaceAfter=1.1,
     )
@@ -74,9 +74,9 @@ styles.add(
         name="BulletLine",
         parent=styles["BodyText"],
         fontName="Helvetica",
-        fontSize=8.9,
-        leading=10.3,
-        leftIndent=9,
+        fontSize=7.55,
+        leading=8.4,
+        leftIndent=7,
         firstLineIndent=-5,
         bulletIndent=0,
         spaceAfter=0.7,
@@ -88,8 +88,8 @@ styles.add(
         name="Role",
         parent=styles["BodyText"],
         fontName="Helvetica-Bold",
-        fontSize=9.5,
-        leading=10.8,
+        fontSize=8.2,
+        leading=9.0,
         textColor=colors.HexColor("#111827"),
         spaceAfter=0.4,
     )
@@ -99,21 +99,21 @@ styles.add(
 doc = SimpleDocTemplate(
     OUTPUT_FILE,
     pagesize=A4,
-    leftMargin=15 * mm,
-    rightMargin=15 * mm,
-    topMargin=12 * mm,
-    bottomMargin=12 * mm,
+    leftMargin=12 * mm,
+    rightMargin=12 * mm,
+    topMargin=9 * mm,
+    bottomMargin=9 * mm,
 )
 
 story = []
 
 story.append(p("SAMAY DUDHAREJIYA", styles["Name"]))
-story.append(p("Junagadh, India | 8734940440 | Samay4932@gmail.com", styles["Contact"]))
+story.append(p("Junagadh, Gujarat, India | +91 8734940440 | samay4932@gmail.com", styles["Contact"]))
 story.append(
     p(
         '<link href="https://www.linkedin.com/in/samay-dudhrejiya">LinkedIn</link> | '
-        '<link href="https://samay-dev-portfolio.vercel.app/">Portfolio</link> | '
-        '<link href="https://github.com/1SAMAY">GitHub</link>',
+        '<link href="https://github.com/1SAMAY">GitHub</link> | '
+        '<link href="https://samay-dev-portfolio.vercel.app/">Portfolio</link>',
         styles["Contact"],
     )
 )
@@ -121,33 +121,35 @@ story.append(
 story.extend(section_title("SUMMARY", styles))
 story.append(
     p(
-        "Motivated BCA graduate with a strong interest in web development and UI/UX design. Skilled in building responsive, user-friendly interfaces with modern web technologies. Quick learner with a strong eye for clean design, problem solving, and continuous improvement.",
+        "Full Stack Developer pursuing an M.Sc. in Information Technology with hands-on experience building web applications, desktop software, browser extensions, and AI-powered tools end-to-end. Skilled in Python, PHP, JavaScript, React.js, FastAPI, and SQL, with a focus on clean, scalable code and shipping practical software.",
         styles["Body"],
     )
 )
 
 story.extend(section_title("EDUCATION", styles))
-story.append(p("Bachelor of Computer Applications (BCA)", styles["Role"]))
-story.append(p("CCSIT College, Junagadh | Completed: 2026", styles["Body"]))
+story.append(p("Master of Science (M.Sc.) in Information Technology - Pursuing", styles["Role"]))
+story.append(p("Bachelor of Computer Applications (BCA) - Graduated 2026", styles["Role"]))
+story.append(p("Bhakta Kavi Narsinh Mehta University (BKNMU), CCSIT College, Junagadh, Gujarat, India", styles["Body"]))
 
-story.extend(section_title("EXPERIENCE", styles))
-story.append(p("Self-Learning Full Stack Development (Ongoing)", styles["Role"]))
+story.extend(section_title("INDEPENDENT PROJECT WORK", styles))
+story.append(p("2025 - Present", styles["Role"]))
 for bullet in [
-    "Expanding skills in frontend + backend development using modern web technologies.",
-    "Practicing backend fundamentals with Node.js, Express.js, and REST APIs (learning phase).",
-    "Working on small full-stack projects integrating frontend UI with backend logic and databases.",
-    "Strengthening understanding of authentication, database design, and API integration.",
+    "Designed full-stack web apps, desktop applications, browser extensions, and developer tools from concept to implementation.",
+    "Built REST APIs and backend services using Python, FastAPI, PHP, Node.js, and SQL databases.",
+    "Developed responsive interfaces with React.js, Next.js, JavaScript, HTML5, CSS3, Bootstrap, and Tailwind CSS.",
+    "Implemented authentication, database integration, API communication, Git workflows, debugging, and performance optimization.",
 ]:
     story.append(p(f"- {bullet}", styles["BulletLine"]))
 
 story.extend(section_title("TECHNICAL SKILLS", styles))
 skills_table = Table(
     [
-        [p("<b>Frontend:</b> HTML, CSS, JavaScript, React.js, Bootstrap, Responsive Web Design", styles["Body"])],
-        [p("<b>Backend:</b> Node.js, Express.js, REST APIs (learning phase)", styles["Body"])],
-        [p("<b>Tools:</b> Git, GitHub, Figma", styles["Body"])],
-        [p("<b>Other:</b> Python (Basic), SQL (Basic)", styles["Body"])],
-        [p("<b>Soft Skills:</b> Problem Solving, Team Collaboration", styles["Body"])],
+        [p("<b>Programming Languages:</b> Python, JavaScript, PHP, HTML5, CSS3, SQL", styles["Body"])],
+        [p("<b>Frontend:</b> React.js, Next.js, Bootstrap, Tailwind CSS, Responsive Web Design", styles["Body"])],
+        [p("<b>Backend:</b> FastAPI, Node.js, Express.js, REST API Development", styles["Body"])],
+        [p("<b>Databases:</b> MySQL, SQLite", styles["Body"])],
+        [p("<b>Tools:</b> Git, GitHub, Docker, Postman, VS Code, Figma", styles["Body"])],
+        [p("<b>Development Skills:</b> Authentication (JWT), API Integration, JSON, Desktop Application Development, Browser Extension Development, Software Architecture, Debugging & Testing, Problem Solving", styles["Body"])],
     ],
     colWidths=[170 * mm],
     style=TableStyle(
@@ -157,40 +159,45 @@ skills_table = Table(
             ("INNERGRID", (0, 0), (-1, -1), 0.35, colors.HexColor("#E6EDF3")),
             ("LEFTPADDING", (0, 0), (-1, -1), 6),
             ("RIGHTPADDING", (0, 0), (-1, -1), 6),
-            ("TOPPADDING", (0, 0), (-1, -1), 3),
-            ("BOTTOMPADDING", (0, 0), (-1, -1), 3),
+            ("TOPPADDING", (0, 0), (-1, -1), 2),
+            ("BOTTOMPADDING", (0, 0), (-1, -1), 2),
         ]
     ),
 )
 story.append(skills_table)
 
 story.extend(section_title("PROJECTS", styles))
-story.append(p("Portfolio Website", styles["Role"]))
-for bullet in [
-    "Developed a personal portfolio using HTML, CSS, and JavaScript.",
-    "Implemented responsive design for mobile and desktop devices.",
-    "Showcased projects, skills, and contact information in a clean UI.",
-]:
-    story.append(p(f"- {bullet}", styles["BulletLine"]))
-
-story.append(Spacer(1, 0.9 * mm))
-story.append(p("GitHub Projects", styles["Role"]))
-for bullet in [
-    "Built and maintained multiple projects for practice and learning.",
-    "Worked on real-world features like UI components, APIs, and extensions.",
-    "Improved coding structure, version control, and UI/UX design skills.",
-]:
-    story.append(p(f"- {bullet}", styles["BulletLine"]))
+story.append(p("CodeGuard OS - Offline Source Code Analysis Platform", styles["Role"]))
+story.append(p("Tech Stack: Python, FastAPI, Next.js, SQLite, JavaScript", styles["Body"]))
+story.append(
+    p(
+        "Developed an offline source code analysis platform that scans projects for vulnerabilities, code quality issues, dependency risks, and architecture insights. It analyzes full codebases locally and generates reports and project health metrics without sending data externally.",
+        styles["Body"],
+    )
+)
+story.append(
+    p(
+        "<b>Key Features:</b> Multi-language analysis, ZIP/folder scanning, vulnerability detection, dependency and structure analysis, code quality assessment, HTML/PDF reports, metrics dashboard, repository architecture visualization, and offline-first local storage.",
+        styles["Body"],
+    )
+)
+story.append(
+    p(
+        "Additional projects - including web applications, desktop software, browser extensions, and AI tools - are available on my GitHub profile.",
+        styles["Body"],
+    )
+)
 
 story.extend(section_title("ACHIEVEMENTS", styles))
 for bullet in [
-    "Developed and deployed multiple live projects.",
-    "Completed UI/UX Internship Certification.",
+    "Developed multiple full-stack applications and developer tools, from CodeGuard OS to browser extensions and desktop software.",
+    "Shipped an offline-first security analysis platform covering vulnerability detection, dependency analysis, and reporting.",
+    "Maintain an active GitHub portfolio showcasing practical, working software projects.",
 ]:
     story.append(p(f"- {bullet}", styles["BulletLine"]))
 
 story.extend(section_title("LANGUAGES", styles))
-story.append(p("Gujarati, Hindi, English", styles["Body"]))
+story.append(p("English, Hindi, Gujarati", styles["Body"]))
 
 
 def add_page_number(canvas, doc):

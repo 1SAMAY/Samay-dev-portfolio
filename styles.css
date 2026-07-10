@@ -2731,9 +2731,9 @@ h1 span {
     grid-template-columns: 1fr;
   }
 
-  .project-filters {
-    justify-content: flex-start;
-  }
+.project-filters {
+  justify-content: flex-start;
+}
 
   .code-city-top-hud {
     align-items: flex-start;
@@ -3270,5 +3270,21 @@ body.code-city-fullscreen-open {
 
   .code-city-quality {
     flex: 0 0 auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.001ms !important;
+  }
+
+  .featured-card.is-preview,
+  .project-card.is-preview {
+    transform: none;
   }
 }
