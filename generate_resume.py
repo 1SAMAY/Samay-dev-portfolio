@@ -167,26 +167,31 @@ skills_table = Table(
 story.append(skills_table)
 
 story.extend(section_title("PROJECTS", styles))
-story.append(p("CodeGuard OS - Offline Source Code Analysis Platform", styles["Role"]))
-story.append(p("Tech Stack: Python, FastAPI, Next.js, SQLite, JavaScript", styles["Body"]))
-story.append(
-    p(
-        "Developed an offline source code analysis platform that scans projects for vulnerabilities, code quality issues, dependency risks, and architecture insights. It analyzes full codebases locally and generates reports and project health metrics without sending data externally.",
-        styles["Body"],
-    )
-)
-story.append(
-    p(
-        "<b>Key Features:</b> Multi-language analysis, ZIP/folder scanning, vulnerability detection, dependency and structure analysis, code quality assessment, HTML/PDF reports, metrics dashboard, repository architecture visualization, and offline-first local storage.",
-        styles["Body"],
-    )
-)
-story.append(
-    p(
-        "Additional projects - including web applications, desktop software, browser extensions, and AI tools - are available on my GitHub profile.",
-        styles["Body"],
-    )
-)
+project_items = [
+    (
+        "CodeGuard OS - Offline Source Code Analysis Platform",
+        "Python, FastAPI, Next.js, SQLite, JavaScript",
+        "Built an offline-first security scanner for ZIP/folder analysis with vulnerability checks, dependency risk review, code quality scoring, metrics dashboard, architecture visualization, and HTML/PDF reports.",
+    ),
+    (
+        "PDFShield Pro - Local PDF Security Suite",
+        "TypeScript, FastAPI, PDF tooling, Docker",
+        "Created a privacy-focused PDF protection workflow for encryption, authorized unlocking, batch processing, secure local handling, and clean dashboard-based operations.",
+    ),
+    (
+        "VisionText-AI & RepoGalaxy",
+        "JavaScript, OCR, GitHub API, 3D Visualization",
+        "Delivered an OCR web app for extracting editable text from images/PDFs and a client-side 3D GitHub visualizer for exploring repositories and project structure.",
+    ),
+    (
+        "Portfolio, Extensions & Browser Tools",
+        "React.js, TypeScript, Chrome Extensions, CSS",
+        "Built a modern developer portfolio plus practical tools such as Cookie-Sync, media downloader extension, Game Store, Fun Game, and other public GitHub projects.",
+    ),
+]
+for title, stack, detail in project_items:
+    story.append(p(title, styles["Role"]))
+    story.append(p(f"- <b>Tech:</b> {stack}. {detail}", styles["BulletLine"]))
 
 story.extend(section_title("ACHIEVEMENTS", styles))
 for bullet in [
